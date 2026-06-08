@@ -18,12 +18,9 @@ In Codex's custom plugin platform dialog:
 
 - Source: `ConfigQuote/configquote-agent-plugins`
 - Git reference: `main`
-- Sparse checkout:
+- Sparse checkout: leave blank
 
-```text
-.agents/plugins
-plugins/codex
-```
+If you do use sparse checkout, include both `.agents/plugins` and `plugins/codex` on separate lines.
 
 The Codex bundle reads:
 
@@ -58,7 +55,7 @@ This repo includes the Codex marketplace catalog at:
 .agents/plugins/marketplace.json
 ```
 
-For catalog-based installation, use the repo root as the platform source and include both sparse checkout paths shown above.
+For catalog-based installation, use the repo root as the platform source. Leave sparse checkout blank unless you specifically need a partial checkout.
 
 ## Public vs Private
 
