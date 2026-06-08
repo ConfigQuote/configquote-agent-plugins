@@ -18,7 +18,7 @@ In Codex's custom plugin platform dialog:
 
 - Source: `ConfigQuote/configquote-agent-plugins`
 - Git reference: `main`
-- Sparse checkout: `plugins/codex`
+- Sparse checkout: leave blank
 
 The Codex bundle reads:
 
@@ -54,6 +54,8 @@ marketplace.json
 ```
 
 For catalog-based installation, use the repo root as the platform source.
+
+If you already entered `plugins/codex` as a sparse checkout path, that path also contains a compatibility `marketplace.json`.
 
 ## Public vs Private
 
