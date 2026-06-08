@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "configquote": {
+      "type": "http",
+      "url": "${CONFIGQUOTE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${CONFIGQUOTE_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

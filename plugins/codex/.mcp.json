@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "configquote": {
+      "url": "${CONFIGQUOTE_MCP_URL}",
+      "bearer_token_env_var": "CONFIGQUOTE_ACCESS_TOKEN"
+    }
+  }
+}

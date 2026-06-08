@@ -1,0 +1,22 @@
+{
+  "name": "configquote",
+  "version": "0.1.0",
+  "description": "Private-beta ConfigQuote agent plugin for tenant configuration and quote workflows.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ConfigQuote",
+    "shortDescription": "Manage ConfigQuote configurations and quotes.",
+    "longDescription": "Connects Codex to a tenant-scoped ConfigQuote MCP server for product configuration and quote workflows.",
+    "developerName": "ConfigQuote",
+    "category": "Productivity",
+    "capabilities": ["mcp", "skills"],
+    "brandColor": "#4B94D1",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "defaultPrompt": "Use ConfigQuote to help manage tenant product configurations and quotes."
+  },
+  "mcpServers": "./.mcp.json"
+}
