@@ -47,14 +47,15 @@ It uses the same tenant MCP URL and access token.
 
 ## Marketplace Catalog
 
-This repo also includes Codex marketplace catalog files at:
+This repo also includes a Codex marketplace catalog at:
 
 ```text
 marketplace.json
-.agents/plugins/marketplace.json
 ```
 
-For catalog-based installation, use the repo root as the platform source. If sparse checkout is required, include both the marketplace file path and `plugins/codex`.
+For catalog-based installation, use the repo root as the platform source.
+
+Do not commit `.agents/`. That directory is local Codex workspace metadata and is ignored in this repo.
 
 ## Public vs Private
 
