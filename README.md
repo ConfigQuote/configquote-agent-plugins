@@ -55,8 +55,6 @@ marketplace.json
 
 For catalog-based installation, use the repo root as the platform source.
 
-Do not commit `.agents/`. That directory is local Codex workspace metadata and is ignored in this repo.
-
 ## Public vs Private
 
 Public is fine if this repo contains only plugin manifests, skills, MCP config templates, and generic docs. Keep it private while the beta contract is changing or if you include internal support notes. Never commit tenant tokens or tenant-specific configuration.
