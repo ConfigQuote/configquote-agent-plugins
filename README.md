@@ -18,7 +18,12 @@ In Codex's custom plugin platform dialog:
 
 - Source: `ConfigQuote/configquote-agent-plugins`
 - Git reference: `main`
-- Sparse checkout: leave blank
+- Sparse checkout:
+
+```text
+.agents/plugins
+plugins/codex
+```
 
 The Codex bundle reads:
 
@@ -47,15 +52,13 @@ It uses the same tenant MCP URL and access token.
 
 ## Marketplace Catalog
 
-This repo also includes a Codex marketplace catalog at:
+This repo includes the Codex marketplace catalog at:
 
 ```text
-marketplace.json
+.agents/plugins/marketplace.json
 ```
 
-For catalog-based installation, use the repo root as the platform source.
-
-If you already entered `plugins/codex` as a sparse checkout path, that path also contains a compatibility `marketplace.json`.
+For catalog-based installation, use the repo root as the platform source and include both sparse checkout paths shown above.
 
 ## Public vs Private
 
