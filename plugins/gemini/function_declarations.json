@@ -1,0 +1,90 @@
+[
+  {
+    "name": "search_products",
+    "description": "Search active configurable ConfigQuote products.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string" },
+        "per_page": { "type": "integer" }
+      }
+    }
+  },
+  {
+    "name": "list_configurations",
+    "description": "List ConfigQuote product configurations.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string" },
+        "product_id": { "type": "integer" },
+        "status": { "type": "string" }
+      }
+    }
+  },
+  {
+    "name": "create_configuration",
+    "description": "Create a ConfigQuote configuration.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "product_id": { "type": "integer" },
+        "nodes": { "type": "array" },
+        "edges": { "type": "array" },
+        "steps": { "type": "array" },
+        "status": { "type": "string" }
+      },
+      "required": ["name"]
+    }
+  },
+  {
+    "name": "create_quote",
+    "description": "Create a ConfigQuote quote from visual selections or manual line items.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string" },
+        "configuration_id": { "type": "integer" },
+        "customer": { "type": "object" },
+        "selections": { "type": "object" },
+        "items": { "type": "array" }
+      }
+    }
+  },
+  {
+    "name": "assign_quote",
+    "description": "Assign a quote to a tenant admin or manager.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "quote_id": { "type": "integer" },
+        "assigned_to": { "type": "integer" }
+      },
+      "required": ["quote_id"]
+    }
+  },
+  {
+    "name": "send_quote",
+    "description": "Send a ConfigQuote quote to its customer after explicit user confirmation.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "quote_id": { "type": "integer" },
+        "confirmed": { "type": "boolean" }
+      },
+      "required": ["quote_id", "confirmed"]
+    }
+  },
+  {
+    "name": "get_quote_preview_link",
+    "description": "Get a temporary ConfigQuote quote preview link.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "quote_id": { "type": "integer" }
+      },
+      "required": ["quote_id"]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "configquote": {
+      "serverUrl": "${CONFIGQUOTE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${CONFIGQUOTE_ACCESS_TOKEN}",
+        "X-ConfigQuote-Agent-Host": "copilot",
+        "X-ConfigQuote-Agent-Channel": "employee-chat"
+      }
+    }
+  }
+}
