@@ -23,3 +23,11 @@ Use the `configquote` MCP server for tenant data. Do not scrape or automate the 
 4. Use `assign_quote` when a team member should own follow-up.
 5. Use `get_quote_preview_link` for review.
 6. Use `send_quote` only as an explicit final action.
+
+## 3D Model Tools
+
+- `list_models` — list stored STEP/GLB/STL/implicit models in tenant storage
+- `upload_model` — upload a base64-encoded STEP/GLB/STL/DXF/URDF file; returns `model_url` and `viewer_url`
+- `create_implicit_model` — store an `.implicit.mjs` SDF module (browser-native parametric 3D); returns `model_url` and `viewer_url`
+
+Bind a model to a configuration by including a `node-cad-viewer` node (for STEP/GLB) or `node-implicit-viewer` node (for implicit.mjs) in the `nodes` array of `create_configuration` or `update_configuration`, with `data.modelUrl` set to the returned `model_url`.
