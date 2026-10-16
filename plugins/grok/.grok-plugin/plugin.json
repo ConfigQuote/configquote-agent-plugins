@@ -1,6 +1,6 @@
 {
   "name": "configquote",
   "version": "0.1.0",
-  "description": "ConfigQuote plugin for Grok: manage product configurations and quotes through a tenant-scoped MCP server.",
+  "description": "ConfigQuote helps merchants sell products that need options, rules, or custom pricing before checkout. Shoppers can configure products on the storefront, submit a quote request, and receive a clear branded quote, while merchants manage pricing logic, approvals, templates, and quote workflows in one place. It is especially useful for stores selling made-to-order, configurable, or inquiry-first products where standard add-to-cart flows are not enough.",
   "license": "UNLICENSED"
 }
