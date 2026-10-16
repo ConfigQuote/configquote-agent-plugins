@@ -1,6 +1,6 @@
 {
   "name": "configquote",
   "version": "0.1.0",
-  "description": "ConfigQuote helps merchants sell products that need options, rules, or custom pricing before checkout. Shoppers can configure products on the storefront, submit a quote request, and receive a clear branded quote, while merchants manage pricing logic, approvals, templates, and quote workflows in one place. It is especially useful for stores selling made-to-order, configurable, or inquiry-first products where standard add-to-cart flows are not enough.",
+  "description": "ConfigQuote helps merchants sell products that need options, rules, or custom pricing before checkout. Shoppers configure products on the storefront and request a quote; merchants manage pricing logic, approvals, and quote workflows from Grok.",
   "license": "UNLICENSED"
 }
