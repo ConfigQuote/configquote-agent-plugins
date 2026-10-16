@@ -1,0 +1,6 @@
+{
+  "name": "configquote",
+  "version": "0.1.0",
+  "description": "ConfigQuote plugin for Grok: manage product configurations and quotes through a tenant-scoped MCP server.",
+  "license": "UNLICENSED"
+}
