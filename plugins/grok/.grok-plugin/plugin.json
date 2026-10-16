@@ -2,5 +2,5 @@
   "name": "configquote",
   "version": "0.1.0",
   "description": "ConfigQuote helps merchants sell products that need options, rules, or custom pricing before checkout. Shoppers configure products on the storefront and request a quote; merchants manage pricing logic, approvals, and quote workflows from Grok.",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }

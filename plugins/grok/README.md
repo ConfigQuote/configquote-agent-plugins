@@ -20,4 +20,8 @@ The plugin contacts only that endpoint. It runs no code, has no hooks and sends 
 1. Publish this folder at the root of a public repo under the official org (e.g. `ConfigQuote/configquote-agent-plugins`); the marketplace rejects personal-account sources for branded plugins.
 2. Copy `marketplace-entry.example.json` into `.grok-plugin/marketplace.json` in a fork and set `sha` to the full 40-char commit (`git ls-remote <repo> HEAD`).
 3. Run `python3 scripts/generate-plugin-index.py` and `python3 scripts/validate-catalog.py`, then open a PR.
-4. Set a real `license` in `plugin.json` and confirm the homepage first.
+
+
+## License
+
+MIT, see `LICENSE` in the repository root.
